@@ -9,7 +9,9 @@ Tercih edilen IDE: VS-Code
 Bu projede Sayfaya css ile stil vermeyi, js ile yeni html elemanları oluşturup, var olanları kullanmayı öğretmeyi amaçlamaktadır.
 <br />
 <br />
-![showcase_todolist](https://github.com/user-attachments/assets/10cc497b-4759-4a40-8de8-46743be032a0)
+<p>
+    <img src="assets/showcase_todolist.png" width="800" height="500" />
+</p>
 
 
 
