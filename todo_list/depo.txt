@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Notlarım</title>
+</head>
+
+<body>
+
+<div class="center">
+    <h1>Sınıf Notlarım ✏️</h1>
+    <!-- Tablar -->
+    <div class="tabs">
+        <button class="tablar" onclick="changeTab(event, 'homework-tab')" id="defaultOpen">Ödevler 📖</button>
+        <button class="tablar" onclick="changeTab(event, 'program-tab')">Program 📋</button>
+        <button class="tablar" onclick="changeTab(event, 'study-tab')">Ders 📚</button>
+    </div>
+    <!-- Tab içerikleri -->
+    <div id="homework-tab" class="tabcontent">
+        <h3 class="hmwr-title">26.09.2024 Ödevleri</h3>
+        <ul class="hmwr-title">
+            <li>
+                <input type="checkbox">
+                <label>Sayfa 200-216 yap mat</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Ebob-ekok çalış</label>
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Defteri geçir</label>
+            </li> 
+            <li>
+                <input type="checkbox">
+                <label>İngilizce çalış</label>
+            </li>
+          
+          </ul>
+    </div>
+    
+    <div id="program-tab" class="tabcontent">
+        <h3 class="hmwr-title">Ders programı burda gözükür</h3>
+    </div>
+    
+    <div id="study-tab" class="tabcontent">
+        <h3 class="hmwr-title">Ders notları burda gözükür</h3>
+
+    </div>
+</div>
+
+
+
+</body>
