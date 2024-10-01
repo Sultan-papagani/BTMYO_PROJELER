@@ -7,7 +7,10 @@ Tercih edilen IDE: VS-Code
 ## TODO-List Örneği
 <br />
 Bu projede Sayfaya css ile stil vermeyi, js ile yeni html elemanları oluşturup, var olanları kullanmayı öğretmeyi amaçlamaktadır.
-![showcase_todolist](https://github.com/user-attachments/assets/2a0aad80-6153-414e-8c2c-ea6079a9018a)
+<br />
+<br />
+![showcase_todolist](https://github.com/user-attachments/assets/10cc497b-4759-4a40-8de8-46743be032a0)
+
 
 
 
