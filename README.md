@@ -13,6 +13,15 @@ Bu projede Sayfaya css ile stil vermeyi, js ile yeni html elemanları oluşturup
     <img src="assets/showcase_todolist.png" width="800" height="500" />
 </p>
 
+## Toplu HTML Örnekleri
+<br />
+Bu proje öğrencilerin html kullanmayı kavramaları için sanbox tarzı bir html kodu yazmalarını amaçlamaktadır.
+<br />
+<br />
+<p>
+    <img src="assets/showcase_html.png" width="800" height="500" />
+</p>
+
 
 
 
