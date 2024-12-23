@@ -1,0 +1,203 @@
+/**/
+/*margin olayı bir elementin üstten ve alttan bıraktığı boşluk*/
+/*boşluk verme kısımları dıştan içe: Margin > Border > Padding > Content*/
+/*html body'si. font ayarlıyoruz ve margin:0*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Bütün sitenin içeriğini tutan flexbox. olayı işte siteyi 3 parçaya ayırmak*/
+.site_alani {
+    display: flex;  
+    height: 100vh;  /*bütün ekranı kapla*/
+}
+
+/*sağda ve solda duran oyuncuları tutan kısım*/
+/*genişiği ekranın %30'u kadar ve üstten-alttan 20 pixel de boşluk bırakıyor*/
+.oyuncu_listesi {
+    
+    padding: 10px;
+    box-sizing: border-box; /*normalde boyut belirttiğimizde padding'i kapsamaz ancak border-box yapınca bütün boya dahil olur.*/
+
+    border: 3px solid blue;
+
+    display: flex;          /*flexbox oluştur*/
+    flex-direction: column; /*içinde dizilen elemanlar dikey dizilecek.*/
+    align-items: center;    /*elemanları yatayda ortaya koy (dikeyde değil yoksa tam ortası oluyor)*/
+    flex: 0.2;              /*içindeki elemanları sığdır ve 0.2 oranında geniş tut*/
+}
+
+.saha_yazi_sol_ekip {
+  position: absolute;
+  transform: translate(-50%, -50%); /* Centers both horizontally and vertically */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: 16px;
+  white-space: nowrap; /* Prevent text from wrapping and affecting width*/
+}
+
+.saha_yazi_sag_ekip {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Centers both horizontally and vertically */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    font-size: 16px;
+    white-space: nowrap; /* Prevent text from wrapping and affecting width*/
+}
+
+.attacker
+{
+    top: 50vh;
+    left: 50vw;
+}
+
+.attacker_sol
+{
+    top: 50vh;
+    left: 40vw;
+}
+
+.attacker_sag
+{
+    top: 50vh;
+    left: 60vw;
+}
+
+.midfielder_sol
+{
+    top: 60vh;
+    left: 40vw;
+}
+
+.midfielder
+{
+    top: 60vh;
+    left: 50vw;
+}
+
+.midfielder_sag
+{
+    top: 60vh;
+    left: 60vw;
+}
+
+.defender_sol
+{
+    top: 70vh;
+    left: 37vw;
+}
+
+.defender_orta_sol
+{
+    top: 70vh;
+    left: 45vw;
+}
+
+.defender_orta_sag
+{
+    top: 70vh;
+    left: 55vw;
+}
+
+.defender_sag
+{
+    top: 70vh;
+    left: 63vw;
+}
+
+.kaleci
+{
+    top: 90vh;
+    left: 50vw;
+}
+
+/*KARŞI TAKIM AŞAĞISI*/
+
+.attacker_karsi
+{
+    top: 46vh;
+    left: 50vw;
+}
+
+.attacker_sol_karsi
+{
+    top: 46vh;
+    left: 40vw;
+}
+
+.attacker_sag_karsi
+{
+    top: 46vh;
+    left: 60vw;
+}
+
+.midfielder_sol_karsi
+{
+    top: 37vh;
+    left: 40vw;
+}
+
+.midfielder_karsi
+{
+    top: 37vh;
+    left: 50vw;
+}
+
+.midfielder_sag_karsi
+{
+    top: 37vh;
+    left: 60vw;
+}
+
+.defender_sol_karsi
+{
+    top: 25vh;
+    left: 37vw;
+}
+
+.defender_orta_sol_karsi
+{
+    top: 25vh;
+    left: 45vw;
+}
+
+.defender_orta_sag_karsi
+{
+    top: 25vh;
+    left: 55vw;
+}
+
+.defender_sag_karsi
+{
+    top: 25vh;
+    left: 63vw;
+}
+
+.kaleci_karsi
+{
+    top: 6vh;
+    left: 50vw;
+}
+
+.saha_fotosu
+{
+    width: 100%; 
+    height:100%; 
+    object-fit: contain;
+}
+
+
+
+/*ekranın ortası oyuncu dizilimlerini tutan yer*/
+.oyuncu_dizilimi {
+    flex-grow: 1;   /*1: boş bütün alanı kapla )*/
+    display: flex;  /*bu div'i flexbox'a dönüştür*/
+    /*flexbox içindeki herşeyi ortaya koy*/
+    justify-content: center;  
+    align-items: center;
+}
+
+

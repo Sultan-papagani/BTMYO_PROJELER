@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="odev2.css">
+    <title>Futbol menejeri</title>
+</head>
+<body>
+    <div class="site_alani">
+        <div id="oyuncu_liste_sol" class="oyuncu_listesi">
+            <input autocomplete="off" type="text" id="oyuncu_ekleme_ad_sol" placeholder="Oyuncu adi...">
+            <button onclick="sol_oyuncu_ekle()">Ekle</button>
+            <button onclick="oyuncu_dagit()">Takimi Yerleştir</button>
+            <br>
+        </div>
+
+        <div class="oyuncu_dizilimi">
+            <img class="saha_fotosu" src="saha.png">
+            
+            <p class="saha_yazi_sag_ekip attacker_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip attacker_sol_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip attacker_sag_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip midfielder_sol_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip midfielder_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip midfielder_sag_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip defender_sag_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip defender_orta_sol_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip defender_orta_sag_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip defender_sol_karsi">Boş</p>
+            <p class="saha_yazi_sag_ekip kaleci_karsi">Boş</p>
+
+            <p class="saha_yazi_sol_ekip attacker">Boş</p>
+            <p class="saha_yazi_sol_ekip attacker_sol">Boş</p>
+            <p class="saha_yazi_sol_ekip attacker_sag">Boş</p>
+            <p class="saha_yazi_sol_ekip midfielder_sol">Boş</p>
+            <p class="saha_yazi_sol_ekip midfielder">Boş</p>
+            <p class="saha_yazi_sol_ekip midfielder_sag">Boş</p>
+            <p class="saha_yazi_sol_ekip defender_sag">Boş</p>
+            <p class="saha_yazi_sol_ekip defender_orta_sol">Boş</p>
+            <p class="saha_yazi_sol_ekip defender_orta_sag">Boş</p>
+            <p class="saha_yazi_sol_ekip defender_sol">Boş</p>
+            <p class="saha_yazi_sol_ekip kaleci">Boş</p>
+        </div>
+
+        <div id="oyuncu_liste_sag" class="oyuncu_listesi">
+            <input autocomplete="off" type="text" id="oyuncu_ekleme_ad_sag" placeholder="Oyuncu adi...">
+            <button onclick="sag_oyuncu_ekle()">Ekle</button>
+            <button onclick="oyuncu_dagit_sag()">Takimi Yerleştir</button>
+            <br>
+        </div>
+    </div>
+
+    <script src="odev2.js"></script>
+
+</body>
+</html>
