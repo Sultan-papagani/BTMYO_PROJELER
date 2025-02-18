@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: plusjsans;
+    src: url(PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body
+{
+    background-color: #1a191b; /* arkanın az açık hali: #25242a*/
+    font-family: plusjsans;
+}
+
+#root-div
+{
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+#site-logo
+{
+    margin: 1rem;
+    max-width: 3rem;
+}
+
+#root-header
+{
+    display: flex;
+    align-items: center;
+    background-color:  #6f3f9f;
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
+#root-body
+{
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
+#secimler
+{
+
+}
+
+#secim-kutusu
+{
+
+}
+
+#root-title
+{
+    margin-bottom: 1rem;
+}
+
+#main-div-ruler
+{
+    margin-top: -0.5rem; 
+    background-color: #6f3f9f; 
+    height: 0.3rem; 
+    border: none; 
+    border-radius: 10px;
+}
+
+#root-alt
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#oyun
+{
+    background-color:#25242a;
+    flex-grow: 0.8;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 10px;
+}
+
+/*medya queryisi ile max büyüklük 800'ün altına gelince bu kodu çalıştır ve flex yönünü değiştir*/
+@media (max-width: 800px) {
+    #root-alt{
+      flex-direction: column;
+    }
+  }
+
+#oyun-tahtasi
+{
+    background-color: wheat;
+    display: grid;
+    align-items:start;
+    grid-template-columns: repeat(8,  1fr);
+    grid-template-rows: repeat(8,  1fr);
+    width: 70vmin; /* Responsive size based on viewport */
+    height: 70vmin; /* Ensures the grid is square */
+    margin: 0 auto; /* Centers the grid */
+    gap: 0;
+}
+
+.siyah
+{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    aspect-ratio: 1;
+    background-color: #769656;
+}
+
+.satranc-ust-ruler
+{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 2rem;
+    width: 90%;
+}
+
+.beyaz
+{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    
+    aspect-ratio: 1;
+    background-color: #eeeed2;
+}
+
+.parca
+{
+    aspect-ratio: 1;
+    width:100%;
+    height:100%;
+    display: block; /*<p> gibi block elementi, yeni satırda başlar ve tüm genişliği alır*/
+}
+
+#sag-menu
+{
+    background-color:#25242a;
+    flex-grow: 0.2;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#oyun-modu-secimi
+{
+    height: 2rem;
+    width: 55%;
+
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #1a191b;
+    background-color: white;
+}
+
+.buton
+{
+    font-family: plusjsans;
+    font-weight: 500;
+    color: #1a191b;
+    width: 30%;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.acik-yazi
+{
+    color: white;
+    font-family: plusjsans;
+}
+
+.koyu-yazi
+{
+    color: #c3c8cc;
+    font-family: plusjsans;
+}
+
+.siyah-yazi
+{
+    color: #1a191b;
+    font-family: plusjsans;
+}
+
+/*<div id="secimler">
+                <div id="secim-kutusu">
+                    <p class="acik-yazi">SECENEK 1</p>
+                </div>
+                <div id="secim-kutusu">
+                    <p class="acik-yazi">SECENEK 2</p>
+                </div>
+                <div id="secim-kutusu">
+                    <p class="acik-yazi">SECENEK 3</p>
+                </div>
+            </div>
+            
+            
+                                <div class="satranc-ust-ruler">
+                        <p class="acik-yazi">A</p>
+                        <p class="acik-yazi">B</p>
+                        <p class="acik-yazi">C</p>
+                        <p class="acik-yazi">D</p>
+                        <p class="acik-yazi">E</p>
+                        <p class="acik-yazi">F</p>
+                        <p class="acik-yazi">G</p>
+                        <p class="acik-yazi">H</p>
+                    </div>*/

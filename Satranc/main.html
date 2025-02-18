@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="rook.png" />
+    <link rel="stylesheet" href="main.css">
+    <title>Satrançla</title>
+</head>
+<body>
+    <div id="root-div">
+        <header id="root-header">
+            <img src="rook.png" id="site-logo">
+            <h1 class="acik-yazi">Satrançla</h1>
+        </header>
+
+        <div id="root-body">
+            <div id="root-title">
+                <h1 class="acik-yazi" style="font-size: 1.3rem; margin-top: 1rem;">
+                    <span>Satrançla</span>
+                    <span class="koyu-yazi" style="font-size: 1rem; padding-left: 1rem;">Online satranç platformu, oyunculara iki kişi veya yapay zekaya karşı maç yapma imkanı sunar. Farklı zorluk seviyelerinde botlarla oynayabilir, arkadaşlarınızla düello yapabilir veya turnuvalara katılabilirsiniz. Kullanıcı dostu arayüzü ve anlık analiz araçlarıyla stratejinizi geliştirebilir, hamlelerinizi detaylı inceleyebilirsiniz. Hem amatörler hem de profesyoneller için ideal bir deneyim sunar.</span>
+                </h1>
+            </div>
+            <hr id="main-div-ruler">
+            <div id="root-alt">
+                <div id="oyun">
+                    <div id="oyun-tahtasi">
+                        <!-- buraya grid geliyor js ile -->
+                    </div>
+                </div>
+                <div id="sag-menu">
+                    <h1 class="acik-yazi" style="font-size: 1rem;">Oyun Modu:</h1>
+                    <select id="oyun-modu-secimi" class="siyah-yazi" size="1">
+                        <option value="0">Yerel</option>
+                        <option value="1">Yapay Zeka</option>
+                    </select>
+                    <button class="buton">Başlat</button>
+                    <h1 class="acik-yazi" style="font-size: 1rem; margin-top: 1rem;">Oyun Geçmişi:</h1>
+                    <ul class="acik-yazi" id="gecmis">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
